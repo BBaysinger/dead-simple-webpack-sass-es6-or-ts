@@ -1,4 +1,5 @@
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const path = require("path");
 
 module.exports = {
   mode: "development",
@@ -9,6 +10,7 @@ module.exports = {
   output: {
     path: `${__dirname}/dist`,
     filename: "[name].js",
+    hashFunction: "xxhash64",
   },
   plugins: [
     new CopyWebpackPlugin({
@@ -16,12 +18,18 @@ module.exports = {
     }),
   ],
   devServer: {
+    static: {
+      directory: path.join(__dirname, "static"),
+      watch: true,
+    },
     hot: true,
-    inline: true,
     host: "localhost",
     port: 8080,
-    watchOptions: {
-      poll: true,
+    watchFiles: {
+      paths: ["src/**/*", "static/**/*"],
+      options: {
+        usePolling: true,
+      },
     },
   },
   module: {
