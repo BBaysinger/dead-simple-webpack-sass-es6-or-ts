@@ -1,4 +1,4 @@
-# dead-simple-webpack-sass-es6
+# dead-simple-webpack-sass-es6-or-ts
 
 The smallest "just works" setup for writing vanilla ES6 or TS + SASS with webpack.
 

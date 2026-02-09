@@ -1,5 +1,5 @@
 {
-  "name": "dead-simple-webpack-sass-es6",
+  "name": "dead-simple-webpack-sass-es6-or-ts",
   "version": "1.0.0",
   "description": "Dead-simple Webpack starter for vanilla JS (ES6) or TypeScript + SASS. Great for prototyping.",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
-  "repository": "https://github.com/BBaysinger/dead-simple-webpack-sass-es6.git",
+  "repository": "https://github.com/BBaysinger/dead-simple-webpack-sass-es6-or-ts.git",
   "author": "Bradley Baysinger",
   "license": "MIT",
   "private": false,
