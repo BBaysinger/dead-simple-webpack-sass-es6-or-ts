@@ -1,6 +1,6 @@
 # dead-simple-webpack-sass-es6-or-ts
 
-The smallest "just works" setup for writing vanilla ES6 or TS + SASS with webpack.
+The smallest "just works" setup for writing vanilla ES6 or TypeScript + SASS with webpack.
 
 - ES6 modules (imports/exports) or TS
 - TypeScript (optional)
